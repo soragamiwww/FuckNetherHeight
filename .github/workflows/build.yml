@@ -7,10 +7,10 @@ jobs:
   build:
     runs-on: windows-latest
     strategy:
+      fail-fast: false
       matrix:
         target_type:
           - server
-          - client
     steps:
       - uses: actions/checkout@v6
 
